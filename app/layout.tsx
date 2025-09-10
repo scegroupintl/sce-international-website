@@ -10,10 +10,11 @@ const baseFontFamily = Roboto_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "SCE International",
-  description: "Deploy your static Next.js site to GitHub Pages.",
+  title: "SCE Services & Supplies",
+  description:
+    "Empresa especializada en servicios de construcción, mantenimiento y soluciones integrales para hogares y negocios. Calidad, eficiencia y compromiso en cada proyecto.",
   icons: {
-    icon: "/sce-favicon-192.png",
+    icon: `${process.env.PAGES_BASE_PATH || ""}/sce-favicon-192.png`,
   },
 };
 
