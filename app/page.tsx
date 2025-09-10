@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className="hidden md:block">
               <img
-                src={`${process.env.PAGES_BASE_PATH}business-deal.jpg`}
+                src={`${process.env.PAGES_BASE_PATH}/business-deal.jpg`}
                 alt="SCE International"
                 className="rounded-lg backdrop-blur-sm"
               />
