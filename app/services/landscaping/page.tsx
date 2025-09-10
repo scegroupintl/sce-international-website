@@ -41,7 +41,7 @@ export default function LandscapingPage() {
             <img
               width="400"
               className="fade-in bg-green-100 rounded-md shadow-lg mb-6 md:m-0"
-              src="/landscaping-example.jpg"
+              src={`${process.env.PAGES_BASE_PATH}/landscaping-example.jpg`}
               alt="Landscaping Example"
             />
           </div>
@@ -59,7 +59,7 @@ export default function LandscapingPage() {
               <div className="flex flex-col lg:flex-row">
                 <div className="lg:w-1/2">
                   <img
-                    src="/landscaping-before.jpg"
+                    src={`${process.env.PAGES_BASE_PATH}/landscaping-before.jpg`}
                     alt="Jardín antes de la renovación"
                     className="w-full h-64 lg:h-full object-cover"
                   />
@@ -110,7 +110,7 @@ export default function LandscapingPage() {
 
                 <div className="lg:w-1/2">
                   <img
-                    src="/landscaping-after.jpg"
+                    src={`${process.env.PAGES_BASE_PATH}/landscaping-after.jpg`}
                     alt="Jardín después de la renovación"
                     className="w-full h-64 lg:h-full object-cover"
                   />

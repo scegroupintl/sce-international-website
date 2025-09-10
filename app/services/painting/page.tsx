@@ -39,7 +39,7 @@ export default function PaintingPage() {
             <img
               width="400"
               className="fade-in bg-blue-100 rounded-md shadow-lg mb-6"
-              src="/servicio_de_pintura.jpg"
+              src={`${process.env.PAGES_BASE_PATH}/servicio_de_pintura.jpg`}
               alt="Ejemplo de pintura profesional"
             />
           </div>

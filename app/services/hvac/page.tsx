@@ -46,7 +46,7 @@ export default function HVACPage() {
             <img
               width="400"
               className="fade-in bg-blue-100 rounded-md shadow-lg mb-6 md:mt-3"
-              src="/mantenimiento_de_aires_interno.jpg"
+              src={`${process.env.PAGES_BASE_PATH}/mantenimiento_de_aires_interno.jpg`}
               alt="Ejemplo de servicio HVAC"
             />
           </div>

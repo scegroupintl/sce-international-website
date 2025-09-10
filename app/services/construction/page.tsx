@@ -51,7 +51,7 @@ export default function ConstructionPage() {
             <img
               width="400"
               className="fade-in bg-blue-100 rounded-md shadow-lg mb-6"
-              src="/servicio_albanileria.jpg"
+              src={`${process.env.PAGES_BASE_PATH}/servicio_albanileria.jpg`}
               alt="Ejemplo de albañilería profesional"
             />
           </div>

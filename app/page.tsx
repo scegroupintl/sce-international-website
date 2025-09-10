@@ -31,8 +31,8 @@ export default function Home() {
                 Garantizando calidad, eficiencia y cumplimiento en cada trabajo
               </p>
               <div className="flex flex-col sm:flex-row gap-4 md:justify-center">
-                <Link href="/contact">
-                  <div className="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 text-center">
+                <Link href="/#contact">
+                  <div className="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300 text-center">
                     Contacto
                   </div>
                 </Link>
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className="hidden md:block">
               <img
-                src="/business-deal.jpg"
+                src={`${process.env.PAGES_BASE_PATH}business-deal.jpg`}
                 alt="SCE International"
                 className="rounded-lg backdrop-blur-sm"
               />
