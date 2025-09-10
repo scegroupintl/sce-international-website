@@ -31,13 +31,13 @@ export default function Home() {
                 Garantizando calidad, eficiencia y cumplimiento en cada trabajo
               </p>
               <div className="flex flex-col sm:flex-row gap-4 md:justify-center">
-                <Link href="/#contact">
+                <Link href={`${process.env.PAGES_BASE_PATH}/#contact`}>
                   <div className="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300 text-center">
                     Contacto
                   </div>
                 </Link>
                 <Link
-                  href="#services"
+                  href={`${process.env.PAGES_BASE_PATH}/#services`}
                   className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-800 transition duration-300 text-center"
                 >
                   Nuestros Servicios
@@ -89,7 +89,10 @@ export default function Home() {
                   <li>• Iluminación para exteriores</li>
                 </ul>
 
-                <Link href="/services/landscaping" className="ml-auto mt-auto">
+                <Link
+                  href={`${process.env.PAGES_BASE_PATH}/services/landscaping`}
+                  className="ml-auto mt-auto"
+                >
                   <button className="mt-4 bg-blue-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
                     Ver más
                   </button>
@@ -117,7 +120,10 @@ export default function Home() {
                   <li>• Limpieza e instalación de ductos</li>
                   <li>• Mejoras de eficiencia energética</li>
                 </ul>
-                <Link href="/services/hvac" className="ml-auto mt-auto">
+                <Link
+                  href={`${process.env.PAGES_BASE_PATH}/services/hvac`}
+                  className="ml-auto mt-auto"
+                >
                   <button className="mt-4 bg-blue-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
                     Ver más
                   </button>
@@ -145,7 +151,10 @@ export default function Home() {
                   <li>• Pintura de muebles</li>
                   <li>• Pintado decorativo</li>
                 </ul>
-                <Link href="/services/painting" className="ml-auto mt-auto">
+                <Link
+                  href={`${process.env.PAGES_BASE_PATH}/services/painting`}
+                  className="ml-auto mt-auto"
+                >
                   <button className="mt-4 bg-blue-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
                     Ver más
                   </button>
@@ -171,7 +180,10 @@ export default function Home() {
                   <li>• Reemplazo de accesorios</li>
                   <li>• Limpieza de drenajes</li>
                 </ul>
-                <Link href="/services/plumbing" className="ml-auto mt-auto">
+                <Link
+                  href={`${process.env.PAGES_BASE_PATH}/services/plumbing`}
+                  className="ml-auto mt-auto"
+                >
                   <button className="mt-4 bg-blue-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
                     Ver más
                   </button>
@@ -197,7 +209,10 @@ export default function Home() {
                   <li>• Remodelación de cocina y baño</li>
                   <li>• Proyectos comerciales</li>
                 </ul>
-                <Link href="/services/construction" className="ml-auto mt-auto">
+                <Link
+                  href={`${process.env.PAGES_BASE_PATH}/services/construction`}
+                  className="ml-auto mt-auto"
+                >
                   <button className="mt-4 bg-blue-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
                     Ver más
                   </button>
@@ -225,7 +240,10 @@ export default function Home() {
                   <li>• Inspección de propiedades</li>
                   <li>• Servicios estacionales</li>
                 </ul>
-                <Link href="/services/maintenance" className="ml-auto mt-auto">
+                <Link
+                  href={`${process.env.PAGES_BASE_PATH}/services/maintenance`}
+                  className="ml-auto mt-auto"
+                >
                   <button className="mt-4 bg-blue-600 cursor-pointer text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
                     Ver más
                   </button>

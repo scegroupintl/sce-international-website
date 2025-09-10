@@ -38,7 +38,7 @@ export const NavBar = () => {
         <div className="flex justify-between items-center min-h-16">
           <div className="flex items-center">
             <div className="text-2xl font-bold text-primary py-2">
-              <Link href="/">
+              <Link href={`${process.env.PAGES_BASE_PATH || ""}/`}>
                 <img
                   src={`${
                     process.env.PAGES_BASE_PATH || ""
@@ -51,17 +51,17 @@ export const NavBar = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link href="/#services">
+              <Link href={`${process.env.PAGES_BASE_PATH}/#services`}>
                 <div className="text-gray-700 hover:text-primary px-3 py-2 transition duration-300">
                   Servicios
                 </div>
               </Link>
-              <Link href="/about">
+              <Link href={`${process.env.PAGES_BASE_PATH}/about`}>
                 <div className="text-gray-700 hover:text-primary px-3 py-2 transition duration-300">
                   Sobre Nosotros
                 </div>
               </Link>
-              <Link href="/#contact">
+              <Link href={`${process.env.PAGES_BASE_PATH}/#contact`}>
                 <div className="text-gray-700 hover:text-primary px-3 py-2 transition duration-300">
                   Contacto
                 </div>
@@ -100,21 +100,21 @@ export const NavBar = () => {
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
           <a
-            href="/#services"
+            href={`${process.env.PAGES_BASE_PATH}/#services`}
             className="block px-3 py-2 text-gray-700 hover:text-primary"
             onClick={toggleMobileMenu}
           >
             Servicios
           </a>
           <a
-            href="/about"
+            href={`${process.env.PAGES_BASE_PATH}/about`}
             className="block px-3 py-2 text-gray-700 hover:text-primary"
             onClick={toggleMobileMenu}
           >
             Sobre Nosotros
           </a>
           <a
-            href="/#contact"
+            href={`${process.env.PAGES_BASE_PATH}/#contact`}
             className="block px-3 py-2 text-gray-700 hover:text-primary"
             onClick={toggleMobileMenu}
           >
