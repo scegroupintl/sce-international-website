@@ -20,7 +20,7 @@ export default function NotFound() {
         <p className="text-gray-600 mb-6">
           La página que buscas no existe o ha sido movida.
         </p>
-        <Link href={`${process.env.PAGES_BASE_PATH || ""}/`}>
+        <Link href="/">
           <button className="px-6 py-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded shadow transition-colors duration-200">
             Volver al Inicio
           </button>
