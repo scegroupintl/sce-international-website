@@ -52,18 +52,21 @@ export const NavBar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Link href={`/#services`}>
-                <div className="text-gray-700 hover:text-primary px-3 py-2 transition duration-300">
+                <div className="relative group text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors duration-300">
                   Servicios
+                  <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </div>
               </Link>
               <Link href={`/about`}>
-                <div className="text-gray-700 hover:text-primary px-3 py-2 transition duration-300">
+                <div className="relative group text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors duration-300">
                   Sobre Nosotros
+                  <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </div>
               </Link>
               <Link href={`/#contact`}>
-                <div className="text-gray-700 hover:text-primary px-3 py-2 transition duration-300">
+                <div className="relative group text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors duration-300">
                   Contacto
+                  <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </div>
               </Link>
             </div>
@@ -101,24 +104,27 @@ export const NavBar = () => {
         <div className="px-2 pt-2 pb-3 space-y-1">
           <a
             href={`/#services`}
-            className="block px-3 py-2 text-gray-700 hover:text-primary"
+            className="relative group block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300"
             onClick={toggleMobileMenu}
           >
             Servicios
+            <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
           </a>
           <a
             href={`/about`}
-            className="block px-3 py-2 text-gray-700 hover:text-primary"
+            className="relative group block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300"
             onClick={toggleMobileMenu}
           >
             Sobre Nosotros
+            <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
           </a>
           <a
             href={`/#contact`}
-            className="block px-3 py-2 text-gray-700 hover:text-primary"
+            className="relative group block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300"
             onClick={toggleMobileMenu}
           >
             Contacto
+            <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
           </a>
         </div>
       </div>
